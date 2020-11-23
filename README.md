@@ -24,11 +24,11 @@ rook
 ## 2. 제공되고있는 예제에 있는 yaml을 통해 설치 진행
 
 다음 3개의 yaml을 순차적으로 설치
-
+<pre>
 $ kubectl apply -f rook/cluster/examples/kubernetes/ceph/common.yaml
 $ kubectl apply -f rook/cluster/examples/kubernetes/ceph/operator.yaml
 $ kubectl apply -f rook/cluster/examples/kubernetes/ceph/cluster.yaml
-
+</pre>
  - common.yaml파일을 원본 그대로 설치하면 secrets naming에 sa가 붙게 되는데, hyper cloud와 이름을 같게 하려면 common.yaml에서 rook-csi-cephfs-provisioner-ha의 이름을 rook-csi-cephfs-provisioner으로 바꿔줘야 된다. 
 
 <pre>
