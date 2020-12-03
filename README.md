@@ -31,7 +31,7 @@ $ kubectl apply -f rook/cluster/examples/kubernetes/ceph/cluster.yaml
 </pre>
  - common.yaml파일을 원본 그대로 설치하면 secrets naming에 sa가 붙게 되는데, hyper cloud와 이름을 같게 하려면 common.yaml에서 rook-csi-cephfs-provisioner-ha의 이름을 rook-csi-cephfs-provisioner으로 바꿔줘야 된다. 
 
-<pre>
+<pre>   
     <code>
 1)kubeadmin@kworker01:~/installer$ kubectl apply -f rook/cluster/examples/kubernetes/ceph/common.yaml
 namespace/rook-ceph created
